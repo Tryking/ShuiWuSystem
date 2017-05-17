@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="suiwu.bishe.com.suiwu.activity.ChuKouTSLActivity">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="请输入商品名称/商品代码"
+        android:imeOptions="actionSearch"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="眼镜"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="家具"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="针织"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="钢铁"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="塑料"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="羊绒"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="食品"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="服务"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="出境"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="油漆"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:text="添加数据"/>
+</LinearLayout>
