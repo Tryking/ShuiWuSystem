@@ -17,9 +17,11 @@ public class StrUtils {
         ArrayList<Product> products = new ArrayList<>();
         for (int i = 0; i < productStr.length(); i++) {
             if (productStr.charAt(i) == '\n') {
+                product.setTaxRate(Double.parseDouble(builder.toString()));
                 products.add(product);
                 product = new Product();
                 tag = 0;
+                builder.setLength(0);
             } else if (productStr.charAt(i) == '\t') {
                 switch (tag) {
                     case 0:
@@ -30,9 +32,6 @@ public class StrUtils {
                         break;
                     case 2:
                         product.setUint(builder.toString());
-                        break;
-                    case 3:
-                        product.setTaxRate(Double.parseDouble(builder.toString()));
                         break;
                 }
                 builder.setLength(0);

@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -67,12 +68,22 @@ public class ChuKouTSLActivity extends AppCompatActivity implements View.OnClick
         actionBar.setTitle("出口退税率查询");
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        etSearch.setOnKeyListener(new View.OnKeyListener() {
+//        etSearch.setOnKeyListener(new View.OnKeyListener() {
+//            @Override
+//            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+//                if (keyEvent.getKeyCode() == keyEvent.KEYCODE_ENTER) {
+//                  //在这里处理会处理两次，按下一次，抬起一次
+//                }
+//                return false;
+//            }
+//        });
+        etSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
-            public boolean onKey(View view, int i, KeyEvent keyEvent) {
-                if (keyEvent.getKeyCode() == keyEvent.KEYCODE_ENTER) {
-//                    Toast.makeText(ChuKouTSLActivity.this, "搜索", Toast.LENGTH_LONG).show();
+            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                if (i == EditorInfo.IME_ACTION_SEARCH) {
+                    //Toast.makeText(ChuKouTSLActivity.this, "搜索", Toast.LENGTH_LONG).show();
                     doSearch();
+                    return true;
                 }
                 return false;
             }
