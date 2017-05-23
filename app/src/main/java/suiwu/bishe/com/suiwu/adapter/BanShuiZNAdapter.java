@@ -20,7 +20,7 @@ import suiwu.bishe.com.suiwu.R;
 public class BanShuiZNAdapter extends RecyclerView.Adapter<BanShuiZNAdapter.ViewHolder> {
     String[] banShuiZNStr = new String[]{"税务登记", "税务认定", "发票办理", "申报纳税", "证明办理"};
     int[] banShuiZNImg = new int[]{R.drawable.zn_swdj,
-            R.drawable.zn_1, R.drawable.zn_2, R.drawable.zn_3, R.drawable.zn_4};
+            R.drawable.zn_2_18dp, R.drawable.zn_3_18dp, R.drawable.zn_4_18dp, R.drawable.zn_5_18dp};
     Handler handler;
 
 

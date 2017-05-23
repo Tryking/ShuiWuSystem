@@ -1,6 +1,7 @@
 package suiwu.bishe.com.suiwu;
 
 import android.app.Application;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 
@@ -9,6 +10,8 @@ import org.litepal.LitePal;
 import java.util.ArrayList;
 
 import suiwu.bishe.com.suiwu.database.Product;
+import suiwu.bishe.com.suiwu.util.Constant;
+import suiwu.bishe.com.suiwu.util.NetUtils;
 import suiwu.bishe.com.suiwu.util.StrUtils;
 
 /**
